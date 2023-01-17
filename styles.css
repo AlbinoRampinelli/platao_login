@@ -1,0 +1,143 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', sans-serif;
+    background: #d7dce6;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-left: 375px;
+}
+
+.logo {
+    width: 194px;
+    color: #fff;
+    height: 58px;
+    background-color: #373737;
+    margin-left:622px;
+    margin-top:114px;
+    margin-bottom: 44px;
+    padding-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.video {
+    background-color: #373737;
+    width: 588px;
+    height: 274px;
+    margin-left: 425px;
+    margin-bottom: 34px;
+}
+.form-box{
+    width: 300px;
+    margin-left: 598px;
+    background-color: #191919;
+    text-align: center;
+}
+
+.form-box .form-title {
+    padding-top:30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 14px;
+}
+.form-box input[type="text"],
+.form-box input[type="password"],
+.form-box button[type="submit"]{
+    border: 0;
+    width:201;
+    height:37px;
+    display:block;
+    margin: 20px auto;
+    padding: 11px 14px;
+    text-align: center;
+    border: 2px solid #3742fa;
+    width: 201px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+
+}
+.form-box input[type="text"]:focus,
+.form-box input[type="password"]:focus{
+    width: 280px;
+    border-color: #fff;
+    cursor: pointer;
+}
+
+.form-box button[type="submit"] {
+    border:0;
+    background: #5352ed;
+    border: 2px solid #3742fa;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.form-box button[type="submit"]:hover {
+    background: none;
+}
+
+.form-box .entrar {
+    display:flex;
+}
+
+/*
+.button {
+    border: 0;
+    text-decoration: none;
+    background: #5352ed;
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    border: 2px solid #3742fa;
+    text-align: center;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+
+
+.form-box input[type="text"]:focus, 
+.form-box input[type="password"]:focus {
+    width: 201px;
+    border-color: #ffffff;
+}
+
+.form-box .button {
+    width:20px;
+    height: 11px;
+    font-size: 10px;
+
+}
+.form-box #entrar {
+    border: 0;
+    background: #5352ed;
+
+    text-align: center;
+    border: 2px solid #3742fa;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    transition: 0.25s;
+}
+.form-box #entrar:hover {
+    background: none;
+}
+.form-box .final {
+    display: flex;
+
+}
