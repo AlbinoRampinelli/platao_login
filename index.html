@@ -11,12 +11,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../platao/reset.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./global.css">
+    
+
 </head>
 
-<body>
+<body class="centralize">
     <section class="container">
         
         <h1 class="logo">Platão</h1>
@@ -26,14 +29,36 @@
         <form action="index.html" class="form-box">
             <div class="input">
                 <h1 class="form-title">Usuário</h1>
-                <input type="text" placeholder="Username" autofocus>
-                <input type="password" placeholder="Password">
-                <div class="entrar">
-                    <button type="submit">Esqueceu a senha</button>
-                    <button type="submit">Login in</button>
+                <div class="form-field">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email" onchange="onChangeEmail()" placeholder="seu@email.com" autofocus>
+                    <div class="error" id="email-obrigatorio">Email é Obrigatório !!</div>
+                    <div class="error" id="email-invalido">Email é inválido !!</div> 
+                </div>
+                
+                <div class="form-field">
+                    <label>Password</label>
+                    <input type="password" id="password" name="password" onchange="onChangePassword()" placeholder="Password">
+                    <div class="error" id="password-obrigatorio">Password  é Obrigatório !!</div>
+                </div>
+                
+                <div class="entrar">       
+                    <button type="button" id ="login-button" onclick="login()" class="solid" disabled >Login in</button>      
+                    <button type="button" id="recorver-password-button" onclick="recoverPassword()" class="clear" disabled >Recuperar a senha</button>
+                    <div>
+                        <button type="button" class="outline" disabled onclick="register()">Registrar</button>
+                    </div>
                 </div>    
             </div>
         </form>    
     </section>
-</body>
+
+
+<script src="./index.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-auth-compat.js"></script>
+<script src="./pages/firebase-init.js"></script>
+<script src="./loading.js"></script>
+<script src="./validations.js"></script> 
+
 </html>

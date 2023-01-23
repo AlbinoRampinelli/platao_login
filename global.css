@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+.centralize {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+input, button {
+    padding: 10px;
+    width: -webkit-fill-available;
+}
+.loading {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.loading label {
+    font-size: 24px;
+}
+
+
+.clear {
+    background: #fff;
+    border: none;
+    color:black;
+}
+.solid {
+    background-color: #fff;;
+    border: none;
+    color: black;
+}
+.error {
+    color: white;
+    background: red;
+    display: none;
+}
+button:enabled {
+    opacity: 1.0;
+}
+button:disabled {
+    opacity: 0.5;
+}

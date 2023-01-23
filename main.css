@@ -1,0 +1,20 @@
+body{
+    background: rgb(45, 211, 111);
+    height: 100vh;
+}
+
+
+input:focus-within {
+    appearance: none;
+}
+    
+button {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+.form-box {
+    width: 300px;
+}
+

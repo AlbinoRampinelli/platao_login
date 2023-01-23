@@ -1,0 +1,12 @@
+body{
+    background: rgb(45, 211, 111);
+    height: 100vh;
+}
+
+header {
+    text-align: right;
+}
+header button{
+    width: auto;
+
+}
